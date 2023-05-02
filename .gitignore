@@ -15,3 +15,7 @@ temp/
 testrun/*
 .~lock*
 *.pkl
+log.html
+output.xml
+playwright-log.txt
+report.html
