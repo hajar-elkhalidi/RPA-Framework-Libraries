@@ -9,5 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: run tasks
+      - name: Install dependecies
+        run: npx playwright install-deps 
+      - name: Run tasks
         run: rcc run
