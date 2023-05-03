@@ -1,6 +1,6 @@
 tasks:
   Run all tasks:
-    shell: python -m robot --report NONE --outputdir output tasks/
+    shell: python -m robot --report NONE --outputdir output --exclude gui tasks/
 
 condaConfigFile: conda.yaml
 
