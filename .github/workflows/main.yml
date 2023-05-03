@@ -9,9 +9,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install -g npx
-      - name: install npx
+      - name: Install npm and npx
+        run: |
+          apt-get install npm
+          npm install -g npx
+      - name: Install playwright dependencies
         run: npx playwright install-deps
       - name: Run tasks
         run: rcc run
