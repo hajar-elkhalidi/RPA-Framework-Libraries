@@ -9,8 +9,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependecies
-        run: npx playwright install-deps 
       - name: Install dependencies
         run: npm install -g npx
       - name: install npx
