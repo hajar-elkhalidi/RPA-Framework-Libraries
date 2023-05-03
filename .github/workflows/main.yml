@@ -9,11 +9,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Install npm and npx
-        run: |
-          apt-get install npm -y
-          npm install -g npx
       - name: Install playwright dependencies
-        run: npx playwright install-deps
+        run: |
+          apt-get install -y libatk1.0-0\                
+          libatk-bridge2.0-0\                          
+          libcups2\                                    
+          libdrm2\                                     
+          libatspi2.0-0\                               
+          libxcomposite1\                              
+          libxdamage1\                                 
+          libxfixes3\                                  
+          libxrandr2\                                  
+          libgbm1\                                     
+          libxkbcommon0
       - name: Run tasks
         run: rcc run
