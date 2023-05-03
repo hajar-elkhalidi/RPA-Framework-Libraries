@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install playwright dependencies
         run: |
-          apt-get install -y libatk1.0 libatk-bridge2.0 libcups2 libdrm2 libatspi2.0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libxkbcommon0
+          apt-get install -y libatk1.0 libatk-bridge2.0 libcups2 libdrm2 libatspi2.0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libxkbcommon0 libnss3 libnspr4 libpango-1.0-0 libcairo2 libasound2 
       - name: Run tasks
         run: rcc run
