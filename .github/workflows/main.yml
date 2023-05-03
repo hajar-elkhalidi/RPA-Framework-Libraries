@@ -5,7 +5,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: hajare/rcc:latest
+    container: hajare/rcc:chrome
 
     steps:
       - uses: actions/checkout@v2
