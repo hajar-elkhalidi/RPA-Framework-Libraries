@@ -4,7 +4,8 @@ Library     RPA.Browser.Selenium
 
 
 *** Tasks ***
-test
+Search Assistant
+    [Tags]    gui
     Add heading    Let's GOOGLE it!
     Add Text Input    name=input    label=Google It:    default=cat
     Add Submit Buttons    Search
